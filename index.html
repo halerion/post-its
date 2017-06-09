@@ -5,6 +5,19 @@
         </title>
         <link href="css/main.css" rel="stylesheet" type="text/css" />
 	</head>
+	<body>
+        <div id="note_adder">
+            <form>
+                <input type="text" id="new_note_text" placeholder="Note text here!" 
+                       style="width:90%"/>
+                <br/>
+                <input type="button" value="Create note!" class="note_controls" 
+                       onclick="create_note($('#new_note_text').val());">
+                <input type="button" value="Save notes!" class="note_controls"
+                       onclick="save_notes();">
+            </form>
+        </div>
+    </body>
 </html>
 <ul>
     <li>
